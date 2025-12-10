@@ -1,0 +1,64 @@
+.container {
+    padding: 20px;
+    border-right: 1px solid #ccc;
+  }
+  
+  .title {
+    margin: 0 0 12px 0;
+    font-size: 1.1rem;
+  }
+  
+  .list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .item {
+    width: 100%;
+    text-align: left;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #ffffff;
+    cursor: pointer;
+    outline: none;
+    transition: background-color 0.15s ease, box-shadow 0.15s ease, border-color 0.15s ease;
+  }
+  
+  .item:hover {
+    background-color: #f7f9fc;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.06);
+  }
+  
+  .itemSelected {
+    background-color: #e3f2fd;
+    border-color: #90caf9;
+  }
+  
+  .name {
+    margin: 0 0 8px 0;
+    font-size: 1rem;
+    font-weight: 600;
+  }
+  
+  .meta {
+    margin: 4px 0;
+    color: #666;
+    font-size: 0.85rem;
+  }
+  
+  /* -------- Responsive tweak for narrow screens -------- */
+  
+  @media (max-width: 768px) {
+    .container {
+      padding: 16px 12px;
+      border-right: none;        /* no vertical separator on stacked layout */
+      border-bottom: 1px solid #eee;
+    }
+  
+    .item {
+      padding: 12px;
+    }
+  }
+  
